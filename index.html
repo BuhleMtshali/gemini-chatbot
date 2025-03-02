@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Chatbot</title>
+<link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="app.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_down" />
+</head>
+<body>
+    <!-- toggle btn -->
+<button id="chatbot-toggler">
+    <span class="material-icons-round">mode_comment</span>
+    <span class="material-icons-round">close</span>
+</button>
+<div class="chatbot-bg">
+    <h1>Chatbot Popup</h1>
+    <div class="img-wrapper">
+    <img src="assets/imgs/image-header.png" alt="header image">
+    </div>
+</div>
+<small>Your own personal Bot...</small>
+
+   <div class="chatbot-popup">
+            <div class="chat-header">
+            <div class="header-info">
+            <div class="chat-logo">
+            <img src="assets/imgs/favicon.png" alt="chatbot icon" >
+            </div>
+            <h2 class="logo-text">ChatBot</h2>
+            </div>
+            <!-- end of header-info -->
+            <button class="material-icons-round" id="close-chatbot">keyboard_arrow_down</button>
+            <!-- ↑arrow down icon -->
+        </div>
+        <!-- end of chat header -->
+
+        <div class="chat-body">
+            <div class="message bot-message">
+            <img src="assets/imgs/favicon.png" alt="chatbot icon" class="bot-avatar">
+            <div class="message-text">Hey there 👋 <br/> How can I help you today?</div>
+            <!-- end of message text -->
+            </div>
+            <!-- end of bot message -->
+        </div>
+        <!-- end of chat body -->
+
+        <!-- Chat Footer -->
+        <div class="chat-footer">
+            <form action="#" class="chat-form" name="chat-form" id="chat-form">
+                <textarea placeholder="Message..." class="message-input" required></textarea>
+                <div class="chat-controls">
+                <button type="button" class="material-icons-round" id="emoji-picker">sentiment_satisfied</button>
+                <div class="file-upload-wrapper">
+                <input type="file" accept="images/*" id="file-input" hidden>
+                <img src="#" >
+                <button type="button" class="material-icons-round" id="file-upload">attach_file</button>
+                <button type="button" class="material-icons-round" id="file-cancel">close</button>
+                </div>
+                <button type="submit" id="send-message" class="material-icons-round">arrow_upward</button>
+                </div>
+                <!-- end of chat controls -->
+            </form>
+        </div>
+   </div> 
+   
+   <!-- link for emojis -->
+   <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script> 
+   <script src="env.js"></script>
+   <script type="module" src="app.js"></script>
+</body>
+</html>
