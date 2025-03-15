@@ -1,3 +1,4 @@
+import { ENV } from "./env.js";
 //defining variables
 const chatBody = document.querySelector(".chat-body")
 const messageInput = document.querySelector(".message-input");
@@ -9,7 +10,7 @@ const chatbotToggler = document.querySelector("#chatbot-toggler");
 const closeChatbot = document.querySelector("#close-chatbot");
 
 //API SETUP
-const apiKey = window.ENV.API_KEY;
+const apiKey = ENV.API_KEY;
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
 
 const userData = {  //storing the user's message by creating a global object making accessible throught the project
